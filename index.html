@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Найди клад</title>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <!-- Sweet Alert 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main id="gameWrapper">
+        <h1 id="heading">Найди клад!</h1>
+        <img id="map" src="assets/treasuremap.webp" alt="map">
+        <p id="distance">Подсказка</p>
+        <p id="clickInfo">Попытки</p>
+    </main>
+
+    <aside>
+        <div class="rulesWrapper">
+            <h2 id="rulesTitle">Правила игры</h2>
+            <ul id="rules">
+                <li>Вам необходимо найти клад, указывая мышью, на его место нахождения на карте.</li>
+                <li>По мере вашего приблежения к нему вам будут отображаться подсказки: (обожжешься, очень горячо, горячо, тепло, холодно, очень холодно, замерзнешь).</li>
+                <li>На то чтобы угадать, где же находится клад вам будет дано 10 попыток!</li>
+            </ul>
+        </div>
+
+        <div>
+            <button id="reset">Начать сначала</button>
+            <button id="infoGame">Подробнее об игре</button>
+        </div>
+    </aside>
+</body>
+</html>
